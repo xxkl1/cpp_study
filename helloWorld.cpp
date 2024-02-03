@@ -1,5 +1,7 @@
 #include <iostream>
 
-void helloWorld() {
-    std::cout << "Hello World" << std::endl;
+namespace HelloWorld {
+    void log() {
+        std::cout << "Hello World" << std::endl;
+    }
 }

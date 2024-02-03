@@ -1,6 +1,6 @@
 #include "helloWorld.h" 
 
 int main() {
-    helloWorld();
+    HelloWorld::log();
     return 0;
 }
