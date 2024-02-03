@@ -1,5 +1,5 @@
-#ifndef helloWorld_h
-#define helloWorld_h
+#ifndef hello_world_h
+#define hello_world_h
 
 namespace HelloWorld {
     void log();
