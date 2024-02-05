@@ -1,0 +1,21 @@
+# build.ninja
+
+# 定义C++编译器
+cxx = clang++
+
+# 编译规则
+rule compile
+  command = $cxx -c $in -o $out
+
+# 链接规则
+rule link
+  command = $cxx $in -o $out
+
+# 构建main.o
+build main.o: compile main.cpp
+
+# 构建helloWorld.o
+build helloWorld.o: compile helloWorld.cpp
+
+# 构建可执行文件main
+build main: link main.o helloWorld.o
